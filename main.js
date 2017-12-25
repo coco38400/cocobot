@@ -52,6 +52,6 @@ bot.on("message" , message => {
             bot.on('message', message => {
             if (message.content.startsWith(prefix + "avatar"))
             message.reply(message.author.avatarURL);
-            client.login(
-process.env.TOKEN);
+            
+                client.login(process.env.TOKEN);
             })})
