@@ -7,7 +7,7 @@ bot.on("ready", () => {
     console.log("Bot Ready !");
 });
 
-bot.login ("Mzg2ODA2Mzg4NDI2Mjc2ODcz.DQVRFQ.VPlCbIpC6EIgEgh4FSfsMdFbakk");
+bot.login (process.env.TOKEN);
 
 bot.on("message" , message => {
     if(message.content.startsWith(prefix + 'ping')){
@@ -52,5 +52,5 @@ bot.on("message" , message => {
             bot.on('message', message => {
             if (message.content.startsWith(prefix + "avatar"))
             message.reply(message.author.avatarURL);
-            client.login(token);
+            
             })})
